@@ -108,7 +108,7 @@ int main() {
     vector<Square> ans;
     vector<int> hs;
 
-    for (int h = (n + 1) / 2; h < min((n + 1) / 2 + 5, n); ++h) {
+    for (int h = (n + 1) / 2; h < min((n + 1) / 2 + 5, n-1); ++h) {
         hs.push_back(h);
     }
 
