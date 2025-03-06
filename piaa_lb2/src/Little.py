@@ -85,8 +85,8 @@ class Node:
         if DEBUG:
             print("Вычисление нижней оценки на основе графа МОД:")
 
-        dopustimye_dugi = self.get_acceptable_edges()
-        mod_graph = self.build_mod_graph(dopustimye_dugi)
+        acceptable_edges = self.get_acceptable_edges()
+        mod_graph = self.build_mod_graph(acceptable_edges)
         bound2 = self.calculate_mod_weight(mod_graph)
 
         if DEBUG:
